@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+    </head>
+
+    <body>
+            <section>
+                <div class="container">
+                    <div class="alura-logo">
+                    <img id="refresh" class="logo-alura" src="imagenes/Vector.png" alt="logo alura">
+                    <h1 class="titulo">Encriptador de texto</h1>
+
+                    </div>
+                    <div class="parte-izquierda">
+                    <textarea class="texto-para-encriptar" id="inputTexto" cols="70" rows="10" onfocus="borrar()" required placeholder="Escribe el texto para encriptar"></textarea>
+
+                    </div>
+                    <div class="parte-derecha">
+                    <img id="imgDibujo" src="imagenes/personaje-dibujos-animados-chico-lindo-gesto-lupa_81698-1583-removebg-preview-removebg-preview.png" alt="muñeco de buscando">
+                    <img id="MsjEncontrado" src="imagenes/adult-g51535aab8_1920-removebg-preview-removebg-preview.png">
+                    <h1 id="texto-ningunmsj">Ningún mensaje fue encontrado</h1>
+                    <h1 id="texto-encontrado">¡Mensaje encontrado!</h1>
+                    <textarea class="texto-desencriptado" id="texto-derecha" cols="40" rows="10" class="texto-desencriptado"></textarea>
+                    <button id="copiar" type="button" name="button" onclick="copiar()">COPIAR</button>
+                    </div>
+
+                    <div class="button-izquierdo">
+                        <p class="advertencia">	&#128994 Solo letras minúsculas y sin acento</p>
+                    <button class="encriptando" id="encriptar" type="button" name="button" onclick="encriptar();">ENCRIPTAR</button>
+                    <button id="desencriptar" type="button" name="button" onclick="desencriptar();mostrar();ocultar();">DESENCRIPTAR</button>
+                    </div>
+                </div>
+            </section>
+
+            <script type="text/javascript" src="script.js"></script>   
+
+    </body>
+    
+
+        
+</html>

@@ -1,0 +1,266 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: url(imagenes/stars-g5372074ae_1280.png);
+}
+
+.container {
+    margin: auto;
+    width: 960px;
+    height: 650px;
+    padding: 5px;
+    background: url(imagenes/stars-g5372074ae_1280.png);
+}
+
+.alura-logo {
+    width: 100%; /*se acomodara de acuerdo al dispositivo */
+    float: left;
+}
+
+.logo-alura {
+    margin-top: 1%;
+    float: inherit;
+    margin-left: 5px; /*margen izquierdo */
+    cursor: pointer;
+}
+
+.titulo {
+    margin-bottom: 1px;
+    text-align: center;
+    font-family: consolas;
+    font-size: 30px;
+    color:white;
+    -webkit-text-stroke:0.3px #1BFD9C;
+
+   
+}
+
+.texto-para-encriptar {
+    float: left; /* float pemite mover los elementos */
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 80%;
+    height: 67%;
+    font-size: 20px;
+    color: white;
+    background: url(imagenes/stars-g5372074ae_1280.png);
+    
+    line-height: 1.4em;
+    border: 2px solid var(--green);
+    --green: #1BFD9C;
+    background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+    outline: 0 none;
+}
+
+.texto-para-encriptar:focus {
+    outline-color: #1BFD9C;
+    box-shadow: -3px -3px 15px #1BFD9C;
+    transition: .1s;
+    transition-property: box-shadow;
+
+}
+
+
+.parte-izquierda {
+    float: left;
+    width: 65%;
+    height: 65%;
+    border-radius: 24px;
+    line-height: 1.4em;
+    border: 2px solid var(--green);
+    --green: #1BFD9C;
+    background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+    color: var(--green);
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+    
+
+}
+
+.parte-derecha {
+    float: right;
+    width: 30%;
+    height: 83.8%;
+    border-radius: 24px;
+    line-height: 1.4em;
+    border: 2px solid var(--green);
+    --green: #1BFD9C;
+    background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+    color: var(--green);
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+    
+}
+
+#imgDibujo {
+    margin-left: 10%;
+    margin-top: 20%;
+    width: 90%;
+    height: auto;
+}
+
+#MsjEncontrado{
+    display: none;
+    margin-left: 9%;
+    margin-top: 20%;
+    width: 80%;
+    height: auto;
+}
+
+#texto-ningunmsj{
+    margin-left: 6%;
+    margin-right: 5%;
+    text-align: center;
+    font-family:Consolas;
+    font-size: 22px;
+    color: white;
+    -webkit-text-stroke: 0.3px #1BFD9C;
+}
+
+#texto-encontrado {
+    display: none;
+    margin-left: 6%;
+    margin-right: 5%;
+    text-align: center;
+    font-family:Consolas;
+    font-size: 22px;
+    color: white;
+    -webkit-text-stroke: 0.3px #1BFD9C;
+}
+
+.texto-desencriptado {
+    float: left;
+    margin-left: 10%;
+    width: 80%;
+    height: 28%;
+    font-size: 17px;
+    color: white;
+    background: url(imagenes/stars-g5372074ae_1280.png);
+    border: 2px solid var(--green);
+    --green: #1BFD9C;
+    background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+    outline: 0 none;
+    
+}
+
+
+#encriptar {
+    padding: 24px;
+    width: 30%;
+    height: 60%;
+    margin-left: 15%;
+    font-size: 17px;
+    letter-spacing: 0.06em;
+    font-family: consolas;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid var(--green);
+    --green: #1BFD9C;
+    background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+    color: var(--green);
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+    cursor: pointer;
+
+}
+
+#encriptar:hover {
+ color: #82ffc9;
+ box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+
+}
+
+#encriptar:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
+}
+
+
+#desencriptar {
+    padding: 24px;
+    width: 30%;
+    height: 60%;
+    margin-left: 10%;
+    font-size: 17px;
+    font-family: consolas;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid var(--green);
+    --green: #1BFD9C;
+    background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+    color: var(--green);
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+    cursor: pointer;
+ 
+}
+
+#desencriptar:hover {
+    color: #82ffc9;
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+   }
+
+#desencriptar:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
+}
+
+.button-izquierdo {
+    float: left;
+    width: 65%;
+    height: auto;
+    border-radius: 24px;
+    
+}
+
+.advertencia {
+    	
+    font-size: 14px;
+    font-family: consolas;
+    color: white;
+    -webkit-text-stroke: 0.1px #1BFD9C;
+    text-align: center;
+    
+}
+
+#copiar {
+    margin-left: 22%;
+    margin-top: 90%;
+    padding: 24px;
+    width: 60%;
+    height: 15%;
+    display: none;
+    font-size: 17px;
+    letter-spacing: 0.06em;
+    font-family: consolas;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid var(--green);
+    --green: #1BFD9C;
+    background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+    color: var(--green);
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+    cursor: pointer;
+
+}
+
+#copiar:hover {
+    color: #82ffc9;
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+   }
