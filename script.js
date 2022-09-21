@@ -10,24 +10,39 @@
 //a-->ai
 //u-->ufat
 
-
-
 function encriptar() {
+
+    valor = document.getElementById("inputTexto").value;
+    if( valor == null || valor.length == 0 || /^\s+$/.test(valor) ) {
+    return false;
+    }
+    
     var texto=document.getElementById("inputTexto").value.toLowerCase() /*toLowerCase()método devuelve el valor de la cadena de llamada convertido a minúsculas. */
+
     var clave = texto.replace(/e/igm,"enter"); /*Cuando se encuentra la letra e se reemplazará como enter */
     var clave = clave.replace(/o/igm,"ober");
     var clave = clave.replace(/i/igm,"imes");
     var clave = clave.replace(/a/igm,"ai");
     var clave = clave.replace(/u/igm,"ufat");
+   
     
     document.getElementById("imgDibujo").style.display = "none"; /*Desaparecerá la imagen */
     document.getElementById("texto-ningunmsj").style.display = "none";
     document.getElementById("texto-derecha").innerHTML = clave;
     document.getElementById("copiar").style.display = "show";
     document.getElementById("copiar").style.display = "inherit";
+
+    
 }
 
 function desencriptar() {
+
+    valor = document.getElementById("inputTexto").value;
+    if( valor == null || valor.length == 0 || /^\s+$/.test(valor) ) {
+    return false;
+    }
+
+    
     var texto=document.getElementById("inputTexto").value.toLowerCase() /*toLowerCase()método devuelve el valor de la cadena de llamada convertido a minúsculas. */
     var clave = texto.replace(/enter/igm,"e"); /*Cuando se encuentra la letra e se reemplazará como enter */
     var clave = clave.replace(/ober/igm,"o");
@@ -40,7 +55,7 @@ function desencriptar() {
     document.getElementById("texto-derecha").innerHTML = clave;
     document.getElementById("copiar").style.display = "show";
     document.getElementById("copiar").style.display = "inherit";
-    
+
 }
 
 function copiar() {
@@ -57,6 +72,11 @@ function borrar()
 
 
 function mostrar() {
+
+    valor = document.getElementById("inputTexto").value;
+    if( valor == null || valor.length == 0 || /^\s+$/.test(valor) ) {
+    return false;
+    }
    
     document.getElementById('MsjEncontrado').style.display = 'block';
     document.getElementById('texto-encontrado').style.display = 'block';
@@ -68,7 +88,6 @@ function ocultar() {
     document.getElementById('copiar').style.display = 'none';
 
 }
-
 
 
 let refresh = document.getElementById('refresh');
